@@ -12,7 +12,7 @@ let userEmail;
 const id =Symbol('123')
 const anotherid =Symbol('123')
 
-console.log(id === anotherid)
+// console.log(id === anotherid)
 
 const bigNumber =  3243546575653n
 // Reference (Non Primitive)
@@ -29,4 +29,29 @@ const muFunction=function(){
     console.log("hello world")
 }
 
-console.log(typeof outsideTemp)
+// console.log(typeof outsideTemp)
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (primitive) , Heap (Non-Primitive)
+
+let myYouTubeName = "anjanpajiyar"
+
+let anothername=myYouTubeName;
+anothername="chaiaurcode"
+console.log(anothername);
+console.log(myYouTubeName);
+
+let userOne = {
+    email:"dfsa",
+    upi:"sdf"
+}
+
+let userTwo = userOne
+
+userTwo.email ="jhkgf"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
+
